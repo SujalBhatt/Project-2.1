@@ -1,0 +1,11 @@
+CHIP HalfAdder {
+   IN a, b;  // 1-bit inputs
+   OUT sum, carry;  // 1-bit outputs
+
+   PARTS:
+   // Implement the logic for the sum (XOR of a and b)
+   Xor(a=a, b=b, out=sum);
+
+   // Implement the logic for the carry (AND of a and b)
+   And(a=a, b=b, out=carry);
+}
